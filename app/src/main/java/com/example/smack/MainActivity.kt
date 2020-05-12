@@ -2,6 +2,7 @@ package com.example.smack
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -36,5 +37,15 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    fun loginBtnNavClick(view: View){
+
+    }
+    fun addChanelClick(view: View){
+
+    }
+    fun sendMsgBtnClick(view: View){
+
     }
 }
