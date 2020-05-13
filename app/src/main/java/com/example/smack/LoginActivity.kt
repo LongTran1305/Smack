@@ -1,4 +1,4 @@
-package com.example.smack.ui
+package com.example.smack
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -13,7 +13,8 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
     }
     fun loginCreateUserBtnClick(view: View){
-
+        val createUserActivity = Intent(this,CreateUserActivity::class.java)
+        startActivity(createUserActivity)
     }
 
     fun loginLoginBtnClick(view: View){
